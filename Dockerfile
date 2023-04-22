@@ -34,7 +34,7 @@ COPY ./bin/ /home/ctf/
 RUN chown -R root:ctf /home/ctf && \
     chmod -R 750 /home/ctf && \
     chmod 740 /home/ctf/flag && \
-    chmod 755 /home/ctf/cal.py
+    chmod 755 /home/ctf/*.py
 
 CMD ["/start.sh"]
 
